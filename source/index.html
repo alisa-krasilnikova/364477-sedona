@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width=150" height="100" alt="City of Sedona">
-      </a>
-      <nav class="main-nav">
+     <nav class="main-nav page-header__nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -28,14 +26,17 @@
           </ul>
         </div>
       </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width=102" height="84" alt="City of Sedona">
+      </a>
     </header>
     <main class="page-content">
       <header class="page-content__header page-content__header--with-tagline">
         <a class="page-content__header-title" href="#">
-          <img class="page-content__header-image" src="http://placehold.it/280x220" width=280" height="220" alt="Welcome - to the gorgeous - Sedona. Because the Grand Canyon sucks!">
+          <img class="page-content__header-image" src="../img/text-sedona-index.svg" width=460" height="350" alt="Welcome - to the gorgeous - Sedona. Because the Grand Canyon sucks!">
         </a>
       </header>
-      <article class="reasons">
+      <article class="page-content__why reasons">
         <div class="reasons__intro">
           <h1 class="reasons__subject">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="reasons__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -43,12 +44,12 @@
         <ul class="reasons__list">
           <li class="reasons__item">
             <figure class="reasons__card">
-              <figcaption class="reasons__card-descr">
+              <figcaption class="reasons__card-descr reasons__card-descr--open">
                 <h2 class="reasons__card-title">Настоящий городок</h2>
                 <span class="reasons__card-number"> - №1 - </span>
                 <p class="reasons__card-reason">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </figcaption>
-              <img class="reasons__card-image" src="#" width="320" height="250" alt="Жизнь таки бурлит">
+              <img class="reasons__card-image reasons__card-image--open" src="#" width="320" height="250" alt="Жизнь таки бурлит">
             </figure>
             <ul class="features">
               <li class="features__item features__item--accomodation">
@@ -110,9 +111,12 @@
       <div class="hotel-search">
         <h1 class="hotel-search__title">Заинтересовались?</h1>
         <p class="hotel-search__invitation">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search__search button" href="#">Найти гостиницу</a>
+        <div class="hotel-search__button button">
+          <a class="hotel-search__link" href="#">Найти гостиницу</a>
+        </div>
       </div>
       <div class="map">
+        <img class="map__marker" src="../img/icon-map-marker.svg" width="27" height="27" alt="Здесь должна быть карта, но что-то пошло не так...">
       </div>
     </main>
     <footer class="page-footer">
@@ -132,7 +136,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="../img/htmlacademy.svg" width="30" height="40" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
