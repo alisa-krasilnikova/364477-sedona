@@ -14,3 +14,15 @@
 @basic-color: white;
 @fancy-color: rgb(129, 179, 209);
 @grey: rgb(238, 238, 238);
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+/*Do I really need it?*/
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
