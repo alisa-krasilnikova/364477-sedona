@@ -1,6 +1,11 @@
 .hotel-search {
+  height: 300px;
   background-color: @basic-color;
   color: black;
+}
+
+.hotel-search__wrapper {
+  padding: 30px 20px;
 }
 
 .hotel-search__title {
@@ -19,4 +24,20 @@
   font-family: "P TSans", sans-serif;
   font-weight: normal;
   text-align: center;
+}
+
+.hotel-search__button {
+  padding: 40px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel-search__wrapper {
+    padding: 60px 145px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel-search__wrapper {
+    padding: 60px 380px;
+  }
 }

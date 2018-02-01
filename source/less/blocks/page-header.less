@@ -1,3 +1,27 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
 .page-header {
-  background-color: @basic-color;
+  width: auto;
+}
+
+.page-header__title {
+  width: auto;
+}
+
+.page-header__image-tagline {
+  width: auto;
+  height: 390px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @fancy-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__image-tagline {
+    height: 515px;
+  }
 }
